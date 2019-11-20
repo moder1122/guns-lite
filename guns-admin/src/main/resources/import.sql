@@ -50,7 +50,7 @@ INSERT INTO `t_sys_login_log` (`id`, `logname`, `userid`, `create_time`, `succee
 -- ----------------------------
 -- Records of t_sys_menu
 -- ----------------------------
-INSERT INTO `t_sys_menu` VALUES ('1', null, null, null, null, 'system', 'fa-cog', '1', '1', '1', '系统管理', '4', '0', '[0],', '1', null, '/system');
+INSERT INTO `t_sys_menu` VALUES ('1', null, null, null, null, 'system', 'fa-cog', '1', '1', '1', '系统管理', '1', '0', '[0],', '1', null, '/system');
 INSERT INTO `t_sys_menu` VALUES ('4', null, null, '1', '2019-04-16 18:59:15', 'mgr', '', '1', null, '2', '用户管理', '1', 'system', '[0],[system],', '1', null, '/mgr');
 INSERT INTO `t_sys_menu` VALUES ('5', null, null, null, null, 'mgr_add', '', '0', null, '3', '添加用户', '1', 'mgr', '[0],[system],[mgr],', '1', null, '/mgr/add');
 INSERT INTO `t_sys_menu` VALUES ('6', null, null, null, null, 'mgr_edit', '', '0', null, '3', '修改用户', '2', 'mgr', '[0],[system],[mgr],', '1', null, '/mgr/edit');
@@ -116,7 +116,8 @@ INSERT INTO `t_sys_menu` VALUES ('69', '1', '2019-06-10 21:28:21', '1', '2019-06
 -- ----------------------------
 -- Records of t_sys_notice
 -- ----------------------------
-INSERT INTO `t_sys_notice` (`id`, `title`, `type`, `content`, `create_time`, `create_by`, `modify_time`, `modify_by`) VALUES ('1', '世界', '10', '欢迎使用guns-lite后台管理系统，点击查看<a href=\"http://enilu.gitee.io/guns-lite\" target=\"_blank\">官方文档</a>', '2017-01-11 08:53:20', '1', '2019-01-08 23:30:58', '1');
+INSERT INTO `t_sys_notice` VALUES ('1', '1', '2017-01-11 08:53:20', '1', '2019-01-08 23:30:58', '欢迎使用guns-lite后台管理系统，点击查看<a href=\"http://enilu.gitee.io/guns-lite\" target=\"_blank\">官方文档</a>', '世界', '10');
+INSERT INTO `t_sys_notice` VALUES ('2', '1', '2017-01-11 08:53:20', '1', '2019-01-08 23:30:58', '最高￥2000元阿里云产品通用代金券，<a href=\"https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=alts44ap\" target=\"_blank\">点击查看</a>', '最高￥2000元阿里云产品通用代金券，<a href=\"https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=alts44ap\" target=\"_blank\">点击查看</a>', '10');
 
 -- ----------------------------
 -- Records of t_sys_operation_log

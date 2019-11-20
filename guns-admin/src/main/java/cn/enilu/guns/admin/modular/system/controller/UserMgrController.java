@@ -148,7 +148,7 @@ public class UserMgrController extends BaseController {
         if (user.getPassword().equals(oldMd5)) {
             String newMd5 = MD5.md5(newPwd, user.getSalt());
             user.setPassword(newMd5);
-          userService.saveOrUpdate(user);
+          userService.update(user);
             return SUCCESS_TIP;
         } else {
             throw new GunsException(BizExceptionEnum.OLD_PWD_NOT_RIGHT);
@@ -253,7 +253,7 @@ public class UserMgrController extends BaseController {
             throw new GunsException(BizExceptionEnum.REQUEST_NULL);
         }
         //不能删除超级管理员
-        if (userId.equals(Const.ADMIN_ID)) {
+        if (userId.intValue() ==  Const.ADMIN_ID.intValue()) {
             throw new GunsException(BizExceptionEnum.CANT_DELETE_ADMIN);
         }
         assertAuth(userId);
